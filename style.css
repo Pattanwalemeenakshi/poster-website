@@ -1,3 +1,4 @@
+/* General body and title styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -10,6 +11,7 @@ body {
   margin-bottom: 30px;
 }
 
+/* Poster container layout */
 .poster-container {
   display: flex;
   gap: 20px;
@@ -17,6 +19,7 @@ body {
   flex-wrap: wrap;
 }
 
+/* Poster card styles */
 .poster-card {
   background: white;
   width: 250px;
@@ -31,6 +34,17 @@ body {
   border-radius: 5px;
 }
 
+/* Poster titles and price */
+.poster-card h3 {
+  margin: 10px 0 5px 0;
+}
+
+.poster-card p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* View Details buttons */
 .poster-card a {
   display: inline-block;
   margin-top: 10px;
@@ -41,6 +55,11 @@ body {
   border-radius: 4px;
 }
 
+.poster-card a:hover {
+  background-color: #333;
+}
+
+/* General buttons (like index page) */
 .button {
   text-decoration: none;
   background: black;
