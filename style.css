@@ -1,3 +1,4 @@
+/* General body and title styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -7,10 +8,12 @@ body {
 }
 
 .title {
+  text-align: center;
   margin-bottom: 30px;
+  color: #333;
 }
 
-/* Poster container */
+/* Poster container layout */
 .poster-container {
   display: flex;
   justify-content: center;
@@ -18,17 +21,19 @@ body {
   gap: 20px;
 }
 
-/* Poster cards */
+/* Poster card styles */
 .poster-card {
   background: white;
   width: 250px;
   padding: 15px;
   border-radius: 8px;
+  text-align: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .poster-card img {
   width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 
@@ -38,19 +43,34 @@ body {
 
 .poster-card p {
   margin: 5px 0;
+  color: #555;
   font-weight: bold;
 }
 
+/* View Details buttons */
 .poster-card a {
   display: inline-block;
   margin-top: 10px;
-  text-decoration: none;
-  background: black;
+  padding: 8px 15px;
+  background-color: #007bff;
   color: white;
-  padding: 8px 12px;
-  border-radius: 4px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .poster-card a:hover {
+  background-color: #0056b3;
+}
+
+/* General button for index page */
+.button {
+  text-decoration: none;
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.button:hover {
   background-color: #333;
 }
