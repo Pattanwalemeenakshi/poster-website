@@ -1,86 +1,42 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+/* Home page full screen background */
+body.home {
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  height: 100vh;
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Overlay to make text readable */
+.overlay {
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  padding: 50px;
+  border-radius: 10px;
   text-align: center;
 }
 
-.home-container {
-  text-align: center;
-  margin-top: 150px;
-}
-
-.title {
-  text-align: center;
+.overlay h1 {
+  color: white;
+  font-size: 48px;
   margin-bottom: 30px;
 }
 
-/* Poster container layout */
-.poster-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Poster card styles */
-.poster-card {
-  background: white;
-  width: 250px;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.poster-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.poster-card h3 {
-  margin: 10px 0 5px 0;
-}
-
-.poster-card p {
-  font-weight: bold;
-}
-
-/* View Details buttons */
-.poster-card a.button, .button {
+/* Big main button style */
+.main-btn {
   display: inline-block;
-  text-decoration: none;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: black;
+  padding: 20px 40px;
+  font-size: 24px;
   color: white;
-  border-radius: 5px;
-}
-
-.poster-card a.button:hover, .button:hover {
-  background-color: #333;
-}
-
-/* Poster detail page */
-.poster-detail img {
-  width: 400px;
-  max-width: 90%;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-.poster-detail button {
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  border: none;
   background-color: black;
-  color: white;
-  cursor: pointer;
+  text-decoration: none;
+  border-radius: 8px;
 }
 
-.poster-detail button:hover {
+.main-btn:hover {
   background-color: #333;
 }
