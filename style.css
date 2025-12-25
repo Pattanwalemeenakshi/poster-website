@@ -1,45 +1,36 @@
-/* Home page full screen background */
-body.home {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  background-image: url('./images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
+.poster-container-vertical {
+  display: block; /* vertical stacking */
+  width: 100%;
+  max-width: 500px; /* optional, keeps cards centered */
+  margin: 0 auto;
 }
 
-/* Overlay to make text readable */
-.overlay {
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-  padding: 60px 80px; /* more padding to make space for button */
-  border-radius: 12px;
-  text-align: center;
-  z-index: 2;
-}
-
-/* Title */
-.overlay h1 {
-  color: white;
-  font-size: 48px;
-  margin-bottom: 40px; /* space before button */
-}
-
-/* Main button */
-.main-btn {
-  display: inline-block;
-  padding: 25px 50px; /* big button */
-  font-size: 28px; /* large font */
-  color: white;
-  background-color: black;
-  text-decoration: none;
+.poster-card {
+  background: white;
+  margin: 20px auto; /* space between cards */
+  padding: 20px;
   border-radius: 10px;
-  transition: 0.3s;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.main-btn:hover {
+.poster-card img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.view-btn:hover {
   background-color: #333;
 }
